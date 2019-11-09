@@ -1,0 +1,88 @@
+ Mobile ou Web?
+Web logar: ADMINISTRADOR GERAL, aonde ira cadastrar usuario para login e dar permissoes para ele
+ideal que seja web(HTML5 - RESPONSIVO), mobile algumas funcoes como agendamento(agilidade para agendar)
+Agendar pelo celular
+** O proprio professor agenda o lab ou fala com o daniel para agendar
+Niveis de permissao: vizualizar, inserir, atualizar e deletar
+
+Permissoes do usuário:DEPTO(vizualizar/inserir/alterar/deletar), PROFESSOR, REITORIA(vizualizar/inserir/alterar)
+
+Professor: Agendamento de lab(fazer e vizualizar), Solicitação de Troca(fazer e vizualizar), solicitação de software(fazer e vizualizar), Relatório de softwares instalado(visualizar), Lista de reservas(ira ter?)
+
+--------- Cadastro de Sala/Lab--------- 
+sala pertence a um determinado Local
+CAMPO: Sala, Local(unidades ou local externo(ex:senai)) 
+DEPARTAMENTO DE TI: cadastrar
+
+--------- Agendamento de Laboratorio---------- CHAMA TELA: SOFTWARES INSTALADOS, SOLICITACAO DE RESERVAS
+CAMPOS: Sala ou Laboratório,LOCAL, Data e Horário 
+Professor:cadastrar agendamento/alterar/pesquisar, ira selecionar só o horario(caso ja tenha um com esse horario, ira alertar o professor que a sala deste local ja esta reservado para este horario)
+DEPARTAMENTO TI:Vizualizar e Alterar(Caso precise)/pesquisar
+
+pesquisar por data e sala(local) 
+Tabela que contêm a sala(local),a data e o horario de cadastro, BOTAO para ver softwares instalados, agendar laboratorio ,solicitar troca (caso clique ira chamar tela de solicitacao, aonde aparecera quem esta fazendo e o motivo(escrever))
+
+
+22 min pra frente(olhar dps)
+--------- Solicitacao de troca--------------- 
+solicitacao sera por salax'
+Campos: SALA(NUMERO) , QUEM ESTA FAZENDO(QUAL PROFESSOR), MOTIVO DA TROCA
+Professor: Na hora que tentar agendar o laboratório, mostrar que "O LAB JA ESTA RESERVADO NO HORÁRIO QUE QUER,DESEJA FAZER UMA SOLICITAÇÃO DE TROCA"(ideal) e
+ALERTAR que o "LABORATORIO JÁ RESERVADO em tal DIA e em determinado HORARIO para tal PROFESSOR" e abaixo "DESEJA FAZER UMA SOLICITAÇÃO DE TROCA",
+SE SIM -MOSTRAR TELA DE DESCRICAO DO PORQUE QUER FAZER A SOLICITACAO DE TROCA, e para o outro professor MOSTRAR QUE ELE POSSUI UMA SOLICITAÇÃO DE TROCA e mostrar A DATA, O HORARIO, O LABORATÓRIO e O TEXTO DO PROFESSOR QUE ENVIO A SOLICITAÇÃO
+SENAO - FECHAR
+
+Mostrar se deseja realmente quer fazer a troca
+SE SIM - TROCA
+SENAO - NAO TROCA
+
+LOGO DEPOIS O PROFESSOR QUE ENVIOU A SOLICITAÇÃO RECEBER SE A PROPOSTA FOI ACEITA("SOLICITACAO COMFIRMA") OU NÃO("SOLICITAÇÃO NEGADA")
+
+CASO OCORRA QUE UM PROFESSOR JA FEZ A SOLICITAÇÃO, O QUE FAZER?
+MOSTRAR AS DUAS NOTIFICAÇÕES(POR DATA E HORARIO)
+
+OBS:GRAVAR AS NOTIFIÇOES SE FORAM ACEITAS OU NAO(JA PASSAR A RESERVA AUTOMATICAMENTE PARA O PROFESSOR QUE FEZ A SOLICITACAO, E APARACER PARA O PROFESSOR QUE ESTA NA FILA QUE A SOLICITACAO FOI ACEITA POR AQUELE PROFESSOR)
+
+--------- Relatorio De Reservas ------------- CHAMA TELA: TELA DE AGENDAMENTO
+CAMPOS: 1 - Data (ORDEM CRESCENTE POR DATA),
+	2 - Qual Sala ou laboratorio,
+        3 - Horario,
+12:35	4 - Mostrar o nome de quem esta a reserva(professor)?(NAO SABE SE VALE A PENA, VERIFICAR)
+	5 - Foi ultilizado ou Nao
+DEPARTAMENTO: vizualizar
+ESTAGIARIO: ira ver se foi ultilizado ou nao
+
+PROBLEMA: PROFESSOR SOLICITAR, TER OUTRO PROFESSOR QUERENDO E NAO RESPONDER A SOLICITAFCAO
+
+--------- Cadastro de softwares instalados(JUNIOR)----------
+CAMPOS:laboratorio, Software
+DEPARTAMENTO DE TI: CADASTRAR/VIZUALIZAR/EDITAR/DELETAR
+
+--------- Relatorio de Solicitaçao dos Softwares Instalados(JUNIOR)------------ CHAMA: Relatorio de Conclusao dos Softwares Instalados
+CAMPOS:Local,Laboratorio, SOFTWARE, QUEM ESTA SOLICITANDO(professor), PRAZO(PARA QUANDO PRECISA)- solicitacao deve ser feita ate 3 dias antes da data de hoje - OBS:nao deixar selecionar os 3 dias
+PROFESSOR: SOLICITA INSTALACAO PARA O ESTAGIARIO , VIZUALIZAR
+DEPARTAMENTO DE TI: SOLICITARA A INSTALACAO PARA O ESTAGIARIO 
+STATUS(INSTALADO/NAO INSTALADO)
+ESTAGIARIO: VIZUALIZAR
+ter um bota de CONCLUSAO que ira para o Relatorio de Conclusao dos Softwares Instalados  
+
+--------- Relatorio dos Softwares Instalados(JUNIOR)------------
+CAMPOS: laboratorio, SOFTWARES INSTALADOS
+PROFESSOR: VISUALIZAR
+DEPARTAMENTO DE TI: VIZUALIZAR
+
+--------- Relatorio dos Softwares Instalados 2 (JUNIOR)------------ 
+CAMPO A SER MOSTRADO:LOCAL, LABORATORIO, SOFTWARE,  QUEM INSTALOU(NOME), DATA INSTALACAO
+DEPARTAMENTO DE TI: ELE QUE IRA SOLICITAR PARA O PROFESSOR, ENVIARA PARA O ESTAGIARIO A SOLICITACAO DE INSTALACAO E O STATUS(INSTALADO/NAO INSTALADO)
+ESTAGIARIO: VIZUALIZAR
+ e vai para uma tela aonde sera informado quem instalou(nome) e a data de instalação. 
+
+FILTRO POR PERIODO(VER COM O O JUNIOR)
+
+-------------------------------------------------------------
+ATOR 
+PROFESSOR: realizar o agendamento, responder e realizar solicitacao de troca, realizar e vizualizar os relatorios de solicitacao de instalação de software, 
+
+48:40-----------------AREA DO ALUNO PARA SOLICITAR PARA USAR LABORATORIO-----------
+ALUNO TER SUA PARTE PARA SOLICITACAO DO LABORATORIO
+
